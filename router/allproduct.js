@@ -9,7 +9,7 @@ allproductRouter.get("/",async(req,res)=>{
 
     try {
         let data=await AllproductModel.find()
-        res.send(data)
+        res.send("home page")
         
     } catch (error) {
         console.log(error)
